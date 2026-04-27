@@ -1,0 +1,328 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shattered Riffs</title>
+    <link rel="shortcut icon" href="./assets/icons/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+
+	    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+	    <!-- Header marca  navegacion   -->
+	    <header class="header" id="top">
+	        <div class="container header__content">
+	            <div class="brand" aria-label="Identidad de la banda">
+	                <img class="brand__icon" src="./assets/icons/logo.ico" alt="Logo de Shattered Riffs">
+	                <h1 class="brand__name">Shattered Riffs</h1>
+            </div>
+
+            <button
+                class="menu-toggle"
+	                type="button"
+	                aria-label="Abrir menu de navegacion"
+	                aria-expanded="false"
+	                aria-controls="site-nav"
+	                data-menu-toggle
+	            >
+	                <span class="menu-toggle__bars" aria-hidden="true"></span>
+	            </button>
+
+	            <nav class="nav" id="site-nav" aria-label="Navegacion principal" data-nav>
+                <ul class="nav__list">
+                    <li><a href="#events">Eventos</a></li>
+                    <li><a href="#about">La Banda</a></li>
+                    <li><a href="#music">Musica</a></li>
+                    <li><a href="#media">Multimedia</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+	        </div>
+	    </header>
+
+	    <main id="main">
+
+	        <!-- HERO -->
+	        <section class="hero" aria-label="Seccion principal">
+            <div class="container hero__content">
+                <h2 class="hero__title">Rock the Night</h2>
+                <p class="hero__subtitle">Gira 2026. Energia, estilo y actitud en vivo.</p>
+                <div class="hero__actions">
+                    <a href="#events" class="btn btn--primary">Ver eventos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- EVENTOS -->
+	        <section id="events" class="events">
+	            <div class="container">
+	                <header class="section-header">
+	                    <h2>Proximos eventos</h2>
+	                    <p>Fechas, ciudades y lugares. Compra de entradas simulada.</p>
+	                </header>
+
+	                <!-- Botones "Comprar": demo.  -->
+	                <div class="events__table-wrap" aria-label="Tabla de eventos">
+	                    <table class="events__table">
+	                        <thead>
+	                            <tr>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Ciudad</th>
+                                <th scope="col">Lugar</th>
+                                <th scope="col">Entradas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>15 Mayo 2026</td>
+                                <td>Madrid</td>
+                                <td>Sala Sol</td>
+                                <td>
+                                    <button class="btn btn--primary btn--small" type="button" data-ticket data-event="Madrid - Sala Sol" data-date="15 Mayo 2026">Comprar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>18 Mayo 2026</td>
+                                <td>Barcelona</td>
+                                <td>Razzmatazz</td>
+                                <td>
+                                    <button class="btn btn--primary btn--small" type="button" data-ticket data-event="Barcelona - Razzmatazz" data-date="18 Mayo 2026">Comprar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>22 Mayo 2026</td>
+                                <td>Valencia</td>
+                                <td>Moon Club</td>
+                                <td>
+                                    <button class="btn btn--primary btn--small" type="button" data-ticket data-event="Valencia - Moon Club" data-date="22 Mayo 2026">Comprar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>29 Mayo 2026</td>
+                                <td>Sevilla</td>
+                                <td>Custom Sound Hall</td>
+                                <td>
+                                    <button class="btn btn--primary btn--small" type="button" data-ticket data-event="Sevilla - Custom Sound Hall" data-date="29 Mayo 2026">Comprar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p class="events__note">
+                        En mobile, desliza horizontalmente para ver la tabla completa.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- -->
+        <section id="about" class="about">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Sobre la banda</h2>
+                    <p>Identidad, influencias y lo que vas a vivir en un concierto.</p>
+                </header>
+
+                <div class="about__content">
+                    <img class="about__photo" src="./assets/img/img-1.jpg" alt="Foto de la banda Shattered Riffs">
+
+                    <article class="about__text">
+                        <p>
+                            Shattered Riffs es una banda de rock de alta energia: riffs pesados, coros para gritar y una
+                            actitud de escenario que no negocia.
+                        </p>
+                        <p>
+                            Nuestros shows son intensos, rapidos y ruidosos. Si vienes a cantar, saltar y quedarte sin voz,
+                            este es tu lugar.
+                        </p>
+
+                        <div class="about__lists" aria-label="Listas de la banda">
+                            <div class="about__list">
+                                <h3>Influencias</h3>
+                                <ul>
+                                    <li>Rock clasico</li>
+                                    <li>Hard rock</li>
+                                    <li>Punk</li>
+                                    <li>Alternativo</li>
+                                </ul>
+                            </div>
+
+                            <div class="about__list">
+                                <h3>Nuestros valores</h3>
+                                <ul>
+                                    <li>Tocar con honestidad</li>
+                                    <li>Respeto en el pogo</li>
+                                    <li>Respeto al crew</li>
+                                    <li>Conectar con el publico</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- MUSIC / DISCOGRAPHY -->
+        <section id="music" class="music">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Discografia</h2>
+                    <p>Algunos lanzamientos para arrancar (previews simulados).</p>
+                </header>
+
+                <div class="music__grid" aria-label="Grid de discografia">
+                    <article class="album">
+                        <img class="album__cover" src="./assets/img/img-8.jpg" alt="Portada del album: Steel & Sparks">
+                        <div class="album__body">
+                            <h3 class="album__title">Steel &amp; Sparks</h3>
+                            <p class="album__meta">LP · 2026</p>
+                            <ul class="tracklist" aria-label="Canciones de Steel & Sparks">
+                                <li>Rock the Night</li>
+                                <li>Voltage Hearts</li>
+                                <li>Break the Silence</li>
+                            </ul>
+	                            <button class="btn btn--ghost btn--small" type="button" data-play data-track="Rock the Night">Reproducir preview</button>
+	                        </div>
+	                    </article>
+
+                    <article class="album">
+                        <img class="album__cover" src="./assets/img/img-9.jpg" alt="Portada del album: No Mercy Weekend">
+                        <div class="album__body">
+                            <h3 class="album__title">No Mercy Weekend</h3>
+                            <p class="album__meta">EP · 2024</p>
+                            <ul class="tracklist" aria-label="Canciones de No Mercy Weekend">
+                                <li>Riot City</li>
+                                <li>Smoke Signals</li>
+                                <li>Run It Back</li>
+                            </ul>
+	                            <button class="btn btn--ghost btn--small" type="button" data-play data-track="Riot City">Reproducir preview</button>
+	                        </div>
+	                    </article>
+
+                    <article class="album">
+                        <img class="album__cover" src="./assets/img/img-10.jpg" alt="Portada del album: Midnight Wiring">
+                        <div class="album__body">
+                            <h3 class="album__title">Midnight Wiring</h3>
+                            <p class="album__meta">Single · 2023</p>
+                            <ul class="tracklist" aria-label="Canciones de Midnight Wiring">
+                                <li>Midnight Wiring</li>
+                                <li>Live at The Basement (Demo)</li>
+                                <li>Acoustic Sparks</li>
+                            </ul>
+	                            <button class="btn btn--ghost btn--small" type="button" data-play data-track="Midnight Wiring">Reproducir preview</button>
+	                        </div>
+	                    </article>
+	                </div>
+	            </div>
+	        </section>
+
+        <!-- MEDIA -->
+        <section id="media" class="media">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Multimedia</h2>
+                    <p>Fotos de shows y un embed simulado.</p>
+                </header>
+
+                <div class="media__layout" aria-label="Galeria multimedia">
+                    <div class="media__gallery" aria-label="Galeria de imagenes">
+                        <figure class="media__item">
+                            <img src="./assets/img/img-2.jpg" alt="Foto en vivo 1">
+                        </figure>
+                        <figure class="media__item">
+                            <img src="./assets/img/img-3.jpg" alt="Foto en vivo 2">
+                        </figure>
+                        <figure class="media__item">
+                            <img src="./assets/img/img-4.jpg" alt="Foto en vivo 3">
+                        </figure>
+                        <figure class="media__item">
+                            <img src="./assets/img/img-5.jpg" alt="Foto backstage">
+                        </figure>
+                        <figure class="media__item">
+                            <img src="./assets/img/img-6.jpg" alt="Foto del publico">
+                        </figure>
+                        <figure class="media__item">
+                            <img src="./assets/img/img-7.jpg" alt="Foto de luces del escenario">
+                        </figure>
+                    </div>
+
+	                    <div class="media__embed" role="group" aria-label="Embed (simulado)">
+	                        <div class="media__embed-inner">
+	                            <p class="media__embed-tag">Video</p>
+	                            <p class="media__embed-title">Shattered Riffs: Sesion en vivo</p>
+	                            <!-- "Ver (Demo)" dispara una accion de ejemplo (no carga un video real). -->
+	                            <button class="btn btn--primary btn--small" type="button" data-embed>
+	                                Ver (Demo)
+	                            </button>
+	                        </div>
+	                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="footer">
+        <div class="container footer__content">
+            <div class="footer__brand">
+                <div class="brand brand--footer">
+                    <img class="brand__icon" src="./assets/icons/logo.ico" alt="Logo de Shattered Riffs">
+                    <p class="brand__name">Shattered Riffs</p>
+                </div>
+                <p class="footer__tagline">Energia. Estilo. Personalidad. Sin relleno.</p>
+            </div>
+
+	            <nav class="footer__nav" aria-label="Footer navigation">
+	                <h3>Enlaces</h3>
+	                <ul class="footer__list">
+	                    <li><a href="#top">Inicio</a></li>
+	                    <li><a href="#events">Eventos</a></li>
+	                    <li><a href="#music">Musica</a></li>
+	                    <li><a href="#media">Multimedia</a></li>
+	                </ul>
+	            </nav>
+	
+	            <div class="footer__social">
+	                <h3>Redes</h3>
+	                <ul class="footer__list social" aria-label="Enlaces de redes">
+	                    <li><a href="#" aria-label="Instagram (enlace de ejemplo)">Instagram</a></li>
+	                    <li><a href="#" aria-label="Spotify (enlace de ejemplo)">Spotify</a></li>
+	                    <li><a href="#" aria-label="YouTube (enlace de ejemplo)">YouTube</a></li>
+	                    <li><a href="#" aria-label="TikTok (enlace de ejemplo)">TikTok</a></li>
+	                    <!-- Enlace personal-->
+	                    <li>
+	                        <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer"
+	                            aria-label="GitHub (enlace personal)">
+	                            GitHub
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	
+	        <div class="container footer__bottom">
+	            <p>© <span id="year"></span> Shattered Riffs. Todos los derechos reservados.</p>
+	        </div>
+		    </footer>
+
+	    <!--  contenedores para feedback  Se controlan desde js/main-->
+	    <div class="toast" aria-live="polite" aria-atomic="true" data-toast hidden></div>
+
+	    <dialog class="modal" data-modal aria-label="Modal de acciones">
+	        <form method="dialog" class="modal__content">
+            <button class="modal__close" type="submit" value="cancel" aria-label="Cerrar dialogo">×</button>
+            <h2 class="modal__title" data-modal-title>Accion</h2>
+            <p class="modal__text" data-modal-text></p>
+            <div class="modal__actions">
+                <button class="btn btn--primary" type="submit" value="ok">Entendido</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
+
