@@ -3,8 +3,7 @@
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-  // Mobile nav
-  const header = document.querySelector(".header");
+  const header = document.querySelector(".encabezado");
   const nav = document.querySelector("[data-nav]");
   const menuToggle = document.querySelector("[data-menu-toggle]");
 
@@ -40,6 +39,35 @@
     setMenuOpen(false);
   });
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") setMenuOpen(false);
   });
@@ -107,6 +135,35 @@
   });
 
  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   const navLinks = nav ? Array.from(nav.querySelectorAll('a[href^="#"]')) : [];
   const sectionIds = navLinks
     .map((a) => a.getAttribute("href")?.slice(1))
